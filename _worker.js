@@ -5,14 +5,65 @@ let mytoken= ['auto'];//快速订阅访问入口, 留空则不启动快速订阅
 
 // 设置优选地址，不带端口号默认443，TLS订阅生成
 let addresses = [
-	'icook.tw:2053#官方优选域名',
-	'cloudflare.cfgo.cc#优选官方线路',
+	'cf.090227.xyz:443#优选域名-CM',
+	'cfip.xxxxxxxx.tk:443#优选域名-OTC',
+	'time.cloudflare.com#官方优选',
+	'time.is#官方优选',
+	'icook.tw#tw#官方优选',
+	'ip.sb#官方优选',
+	'japan.com#JP#官方优选',
+	'malaysia.com#官方优选',
+	'russia.com#官方优选',
+	'singapore.com#SG#官方优选',
+	'skk.moe#官方优选',
+	'www.visa.com#官方优选',
+	'www.visa.com.sg#SG#官方优选',
+	'www.visa.com.hk#HK#官方优选',
+	'www.visa.com.tw#TW#官方优选',
+	'www.visa.co.jp#JP#官方优选',
+	'www.visakorea.com#KOR#官方优选',
+	'www.gco.gov.qa#官方优选',
+	'www.gov.se#官方优选',
+	'www.gov.ua#官方优选',
+	'www.digitalocean.com#官方优选',
+	'www.csgo.com#官方优选',
+	'www.shopify.com#官方优选',
+	'www.whoer.net#官方优选',
+	'www.whatismyip.com#官方优选',
+	'www.ipget.net#官方优选',
+	'www.hugedomains.com#官方优选',
+	'www.udacity.com#官方优选',
+	'www.4chan.org#官方优选',
+	'www.okcupid.com#官方优选',
+	'www.glassdoor.com#官方优选',
+	'www.udemy.com#官方优选',
+	'alejandracaiccedo.com#官方优选',
+	'nc.gocada.co#官方优选',
+	'log.bpminecraft.com#官方优选',
+	'www.boba88slot.com#官方优选',
+	'gur.gov.ua#官方优选',
+	'www.zsu.gov.ua#官方优选',
+	'www.iakeys.com#官方优选',
+	'edtunnel-dgp.pages.dev#官方优选',
+	'www.d-555.com#官方优选',
+	'fbi.gov#官方优选',
+	'www.baipiao.eu.org#官方优选',
+        '45.80.111.64:443#官方优选CT',
+        '45.133.247.80:443#官方优选CT',
+        '185.238.228.33:443#官方优选CT',
+
 ];
 
 // 设置优选地址api接口
 let addressesapi = [
-	'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt', //可参考内容格式 自行搭建。
+	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt', //可参考内容格式 自行搭建。
 	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesipv6api.txt', //IPv6优选内容格式 自行搭建。
+	'https://addressesapi.090227.xyz/cmcc',
+        'https://addressesapi.090227.xyz/ct',
+        'https://addressesapi.090227.xyz/CloudFlareYes',
+        'https://cf-workers-text2kv-d2d.pages.dev/ip.txt?token=qqqq1111',
+        'https://raw.githubusercontent.com/ymyuuu/IPDB/main/bestcf.txt',
+	'https://ct.xxxxxxxx.tk/',
 ];
 
 // 设置优选地址，不带端口号默认80，noTLS订阅生成
@@ -20,6 +71,10 @@ let addressesnotls = [
 	'www.visa.com.sg#官方优选域名',
 	'www.wto.org:8080#官方优选域名',
 	'www.who.int:8880#官方优选域名',
+	'malaysia.com:80#官方优选',
+	'www.csgo.com:80#官方优选',
+	'www.whoer.net:80#官方优选',
+	'www.d-555.com:80#官方优选',
 ];
 
 // 设置优选noTLS地址api接口
