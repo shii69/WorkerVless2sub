@@ -56,7 +56,6 @@ let addresses = [
 
 // 设置优选地址api接口
 let addressesapi = [
-	
 	'https://addressesapi.090227.xyz/cmcc',
         'https://addressesapi.090227.xyz/ct',
         'https://addressesapi.090227.xyz/CloudFlareYes',
