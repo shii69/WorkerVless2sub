@@ -59,7 +59,7 @@ let addressesapi = [
         'https://addressesapi.090227.xyz/ct',
         'https://addressesapi.090227.xyz/CloudFlareYes',
         'https://cf-workers-text2kv-d2d.pages.dev/ip.txt?token=qqqq1111',
-        'https://raw.githubusercontent.com/ymyuuu/IPDB/main/bestcf.txt',
+        'https://raw.githubusercontent.com/ymyuuu/IPDB/main/bestproxy.txt',
 	'https://ct.xxxxxxxx.tk/',
 	'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt',
 ];
