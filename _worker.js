@@ -7,7 +7,7 @@ let mytoken= ['auto'];//快速订阅访问入口, 留空则不启动快速订阅
 let addresses = [
 	'cf.090227.xyz:443#优选域名-CM',
 	'cfip.xxxxxxxx.tk:443#优选域名-OTC',
-	'aliyun.godns.onflashdrive.app:2096#优选域名-TC',
+	'aliyun.godns.onflashdrive.app:443#优选域名-TC',
 	'time.cloudflare.com#官方优选',
 	'time.is#官方优选',
 	'icook.tw#tw-官方优选',
