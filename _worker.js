@@ -33,7 +33,6 @@ let addresses = [
 	'www.whatismyip.com#官方优选',
 	'www.hugedomains.com#官方优选',
 	'www.udacity.com#官方优选',
-	'www.4chan.org#官方优选',
 	'www.okcupid.com#官方优选',
 	'www.glassdoor.com#官方优选',
 	'www.udemy.com#官方优选',
@@ -64,7 +63,6 @@ let addressesapi = [
 
 // 设置优选地址，不带端口号默认80，noTLS订阅生成
 let addressesnotls = [
-	'www.visa.com.sg#官方优选域名',
 	'malaysia.com:80#官方优选',
 	
 ];
