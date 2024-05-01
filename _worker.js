@@ -58,7 +58,7 @@ let addressesapi = [
         'https://addressesapi.090227.xyz/CloudFlareYes',
         'https://cf-workers-text2kv-d2d.pages.dev/ip.txt?token=qqqq1111',
 	'https://ct.xxxxxxxx.tk/',
-	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt',
+	'https://raw.githubusercontent.com/shii69/IPDB/main/bestproxy.txt'，
 ];
 
 // 设置优选地址，不带端口号默认80，noTLS订阅生成
