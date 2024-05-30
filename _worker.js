@@ -47,7 +47,7 @@ let addresses = [
         '45.80.111.64:443#官方优选CT',
         '45.133.247.80:443#官方优选CT',
         '185.238.228.33:443#官方优选CT',
-	'aliyun.classelivre.eu.org#TC',
+	'aliyun.classelivre.eu.org:2096#TC',
 
 ];
 
