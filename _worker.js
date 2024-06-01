@@ -70,7 +70,7 @@ let addressesnotls = [
 
 // 设置优选noTLS地址api接口
 let addressesnotlsapi = [
-	'https://raw.githubusercontent.com/cmliu/CFcdnVmess2sub/main/addressesapi.txt', //可参考内容格式 自行搭建。
+	'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt', //可参考内容格式 自行搭建。
 ];
 
 let DLS = 8;//速度下限
