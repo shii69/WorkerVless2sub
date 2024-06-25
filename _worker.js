@@ -78,7 +78,7 @@ let addressescsv = [
 	//'https://raw.githubusercontent.com/dockkkk/CF-WORKERS/main/result.csv'， //iptest测速结果文件。
 ];
 
-let subconverter = "url.v1.mk"; //在线订阅转换后端，目前使用肥羊的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
+let subconverter = "subapi-loadbalancing.pages.dev"; //在线订阅转换后端，目前使用CM的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
 let subconfig = "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini"; //订阅转换配置文件
 let noTLS = 'false'; //改为 true , 将不做域名判断 始终返回noTLS节点
 let link = '';
@@ -555,7 +555,16 @@ export default {
 						port = match[2] || port;
 						addressid = match[3] || address;
 					}
-	
+
+					const httpPorts = ["8080","8880","2052","2082","2086","2095"];
+					if (!isValidIPv4(address) && port == "80") {
+						for (let httpPort of httpPorts) {
+							if (address.includes(httpPort)) {
+								port = httpPort;
+								break;
+							}
+						}
+					}
 					//console.log(address, port, addressid);
 
 					if (edgetunnel.trim() === 'cmliu' && RproxyIP.trim() === 'true') {
@@ -625,6 +634,15 @@ export default {
 					addressid = match[3] || address;
 				}
 
+				const httpsPorts = ["2053","2083","2087","2096","8443"];
+				if (!isValidIPv4(address) && port == "443") {
+					for (let httpsPort of httpsPorts) {
+						if (address.includes(httpsPort)) {
+							port = httpsPort;
+							break;
+						}
+					}
+				}
 				//console.log(address, port, addressid);
 		
 				if (edgetunnel.trim() === 'cmliu' && RproxyIP.trim() === 'true') {
@@ -809,4 +827,9 @@ function revertFakeInfo(content, userID, hostName) {
 function generateFakeInfo(content, userID, hostName) {
 	content = content.replace(new RegExp(userID, 'g'), fakeUserID).replace(new RegExp(hostName, 'g'), fakeHostName);
 	return content;
+}
+
+function isValidIPv4(address) {
+	const ipv4Regex = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+	return ipv4Regex.test(address);
 }
